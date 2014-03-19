@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>美食首页</title>
+<link href="css/index_style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<div class="header container">
+
+	<div class="nav">
+	
+		<button class="button_login">登陆</button>
+ 
+		<button class="button_sign">注册</button>
+
+	</div>
+
+	<div class="top">
+		
+		<div class="top_img">23</div>
+
+		<input type="text" class="top_input" />
+
+		<button class="top_button">搜索</button>
+
+	</div>
+
+</div>
+
+<div class="slider container">
+
+	<div class="slider_slider">
+		
+		<div class="imgbox">
+
+			<a href="javascript:;" target="_blank"><img src="images/index1.jpg" /></a>
+
+        	<a href="javascript:;" target="_blank"><img src="images/index2.jpg" /></a>
+
+       		<a href="javascript:;" target="_blank"><img src="images/index3.jpg" /></a>
+
+        	<a href="javascript:;" target="_blank"><img src="images/index4.jpg" /></a>
+
+		</div>
+
+	</div>
+
+	<div class="slider_right"></div>
+
+	<div class="slider_img1"><img src="###" alt="img1" class="slider_img" /></div>
+
+	<div class="slider_img2"><img src="###" alt="img2" class="slider_img" /></div>
+
+	<div class="slider_img3"><img src="###" alt="img3" class="slider_img" /></div>
+
+	<div class="slider_img4"><img src="###" alt="img4" class="slider_img" /></div>
+
+</div>
+
+<div class="footer container">3</div>
+
+
+
+<script type="text/javascript" src="js/jQuery.js"></script>
+<script type="text/javascript">
+var i =0;
+$(document).ready(function(){
+    var t;
+    var abc = function(){
+        if(i==3)i=-1;
+        i=i+1;
+        var a=i*-950;
+        var j = a+'px';
+        $(".imgbox").css("left",j);
+        setTimeout(abc,8000);
+    }
+    abc();
+})
+
+</script>
+
+</body>
+</html>
